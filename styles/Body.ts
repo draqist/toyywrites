@@ -34,7 +34,16 @@ export const BrandTag = styled.div`
       font-family: "Tiempos"; 
       width: 60%;
       margin-top: 60px;
-      line-height: 2
-    }
+      line-height: 2;
+      h3 {
+        /* letter-spacing: 30px; */
+        margin-top: 20px;
+        font-family: "Bergman";
+        transition: .5s all ease-in;
+        :hover{
+          /* letter-spacing:1px; */
+        }
+      }
+    };
   }
 `

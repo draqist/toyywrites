@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           {" "}
           It all began 15 years ago in the tight crevices of Lagos, Nigeria. The will to make people express themselves
           with the confidence that their attires gave them. Putting smiles on faces and making people the talk of town
-          with trendy and stylish designs from all cultural blends.{" "}
+          with trendy and stylish designs from all cultural blends. <h3> DISCOVER DIIJA </h3>
         </div>
       </BrandTag>
     </Body>
