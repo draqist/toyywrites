@@ -215,6 +215,37 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@madebywild/eslint-config-base@^0.6.0", "@madebywild/eslint-config-base@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@madebywild/eslint-config-base/-/eslint-config-base-0.6.1.tgz#dc46663c5777637f03b0baccf3cd1dd1b0245055"
+  integrity sha512-hNlBDbpmnKH6pKARiCfh/yee1SbNXWGQSm7tY2trJKeJ+KiXfapS2I2lsn9AtkNxaOjuEE7hvae5kKHMw6YRKA==
+
+"@madebywild/eslint-config-typescript@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@madebywild/eslint-config-typescript/-/eslint-config-typescript-0.4.1.tgz#87f87f20bb4e2b9fea2bf0b732e289893e1b2cee"
+  integrity sha512-POHhiEtjQdICOh8Q43tMJcrBFLFX5n/UZ5NJxm5qgqs5low0BeVWt0Vj9ar32jYG44OaM+4zwhfHVyGwW/KRVg==
+  dependencies:
+    "@madebywild/eslint-config-base" "^0.6.0"
+
+"@madebywild/eslint-config-typescript@^0.4.1":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@madebywild/eslint-config-typescript/-/eslint-config-typescript-0.4.2.tgz#8f65aca90e45e96710c146168972bf5d9f87d75d"
+  integrity sha512-sakWzdYEf4aIajcYSsipIk3cKyu4eLnI5ScW8qmSsbp79WP1Lua78oXUHuB0mudPZvN/mHsd8diXDPkj4ob3SQ==
+  dependencies:
+    "@madebywild/eslint-config-base" "^0.6.1"
+
+"@madebywild/eslint-config@0.5.5":
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/@madebywild/eslint-config/-/eslint-config-0.5.5.tgz#c0178c8309f6f6f9501ef69306d4c261c5081074"
+  integrity sha512-HGF/1idxpOAeOLaCSm2RcmjHHrBKrw2kgL/PPRdg2tv1ktw5cQy6RBodHHV9MWuBHp5Os4LCMvJMYNwkSl1Dyg==
+  dependencies:
+    "@madebywild/eslint-config-typescript" "^0.4.1"
+
+"@madebywild/prettier-config@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@madebywild/prettier-config/-/prettier-config-0.1.0.tgz#f28bfcb1742a2bcb2b79ca7d569afab4bab2eea1"
+  integrity sha512-F99JHKIPBCi0oA6DyTSpLPAffDGYdHoKfBa9d/1u5QLpF7LG10a128E6MEBMA/im6A2330aub6nlwwi5wStncQ==
+
 "@next/env@12.2.0":
   version "12.2.0"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.2.0.tgz#17ce2d9f5532b677829840037e06f208b7eed66b"

@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write 'src/**/*.{json,md,css,js,jsx,ts,tsx}'",
+    "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
     "gsap": "^3.11.1",
@@ -24,6 +26,9 @@
     "@types/styled-components": "^5.1.26",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.0",
-    "typescript": "4.7.4"
+    "typescript": "4.7.4",
+    "@madebywild/eslint-config": "0.5.5",
+    "@madebywild/eslint-config-typescript": "0.4.1",
+    "@madebywild/prettier-config": "^0.1.0"
   }
 }
