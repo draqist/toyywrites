@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Navbar from "../components/Navbar";
+import SliderImage from "../components/SliderImage";
 import { Body, BrandTag, CarouselContainer, Projects } from "../styles/Body";
 
 const Home: NextPage = () => {
@@ -64,7 +65,9 @@ const Home: NextPage = () => {
           <div />
         </div>
         <div className="project_slides">
-          <img src="/image/Abaya1.jpeg" alt="image" />
+          <SliderImage />
+          <SliderImage />
+          <SliderImage />
         </div>
       </Projects>
     </Body>

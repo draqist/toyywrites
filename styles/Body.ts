@@ -96,7 +96,21 @@ export const Projects = styled.div`
         }
     }
     &_slides{
-      margin-top: 60px;
+      margin:60px 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
     }
+  }
+`
+
+export const ImageContainer = styled.div`
+  width: 400px;
+  height: 560px;
+  border-radius: 10px;
+  img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
   }
 `

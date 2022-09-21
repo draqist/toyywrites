@@ -1,9 +1,11 @@
-import React from 'react'
+import { ImageContainer } from "../styles/Body";
 
 const SliderImage = () => {
   return (
-    <div>SliderImage</div>
-  )
-}
+    <ImageContainer>
+      <img src="/image/Abaya1.jpeg" alt="image" />
+    </ImageContainer>
+  );
+};
 
-export default SliderImage
+export default SliderImage;
