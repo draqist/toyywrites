@@ -33,7 +33,7 @@ export const MenuNav = styled.div`
   position: absolute;
   top: 0;
   width: 100vw;
-  z-index: 4;
+  z-index: 5;
   left: 0px;
   height: 100vh;
   background-color: var(--background-color);

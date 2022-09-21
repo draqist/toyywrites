@@ -105,11 +105,11 @@ export const Projects = styled.div`
 `
 
 export const ImageContainer = styled.div`
-  width: 400px;
+  width: 320px;
   height: 560px;
-  border-radius: 10px;
+  border-radius: 14px;
   img{
-    border-radius: 10px;
+    border-radius: 14px;
     width: 100%;
     height: 100%;
   }

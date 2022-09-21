@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
       }
       html{
         --color-text: black;
-        --color-background: #E6E6E6;
+        --background-color: #E6E6E6;
         --test: purple;
         --border: #00000030;
       }
@@ -37,7 +37,7 @@ export const GlobalStyles = createGlobalStyle`
       padding: 0;
       scroll-behavior: smooth;
       font-family: "Bergman", sans-serif;
-      background-color: var(--color-background);
+      background-color: var(--background-color);
     }
   ::-webkit-scrollbar {
     display: none;
