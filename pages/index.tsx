@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Navbar from "../components/Navbar";
+import SliderImage from "../components/SliderImage";
 import { Body, BrandTag, CarouselContainer, Projects } from "../styles/Body";
-import SliderImage from "../components/SliderImage"
 
 const Home: NextPage = () => {
   return (
@@ -66,8 +66,8 @@ const Home: NextPage = () => {
         </div>
         <div className="project_slides">
           <SliderImage />
-          {/* <SliderImage />
-          <SliderImage /> */}
+          <SliderImage />
+          <SliderImage />
         </div>
       </Projects>
     </Body>
