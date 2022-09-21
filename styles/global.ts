@@ -8,8 +8,13 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing:border-box;
       }
       #root{
-        margin:0 auto;
         height: 100%;
+      }
+      html{
+        --color-text: black;
+        --color-background: #E6E6E6;
+        --test: purple;
+        --border: #00000030;
       }
     @font-face {
         font-family: 'Bergman';
@@ -29,11 +34,17 @@ export const GlobalStyles = createGlobalStyle`
       margin: 0;
       height: 100%;
       width: 100%;
+      padding: 0;
       scroll-behavior: smooth;
       font-family: "Bergman", sans-serif;
-      background-color: #E6E6E6;
+      background-color: var(--color-background);
     }
   ::-webkit-scrollbar {
     display: none;
+  }
+  button{
+    background-color: transparent;
+    border: none;
+    outline: none;
   }
 `;

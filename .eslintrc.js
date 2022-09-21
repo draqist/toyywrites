@@ -1,15 +1,20 @@
 module.exports = {
-  extends: ["@madebywild/eslint-config-typescript"],
-  plugins: ["jsx-a11y", "react-hooks"],
+  extends: ["plugin:@next/next/recommended", "@madebywild/eslint-config"],
+  overrides: [
+    {
+      files: ["**/*.d.ts", "./src/pages/**/*.ts?(x)"],
+      rules: {
+        "import/no-default-export": "off",
+      },
+    },
+  ],
   rules: {
-    "react/prop-types": "off",
-    "react/react-in-jsx-scope": "off",
-    "react/no-unescaped-entities": "off",
-    "react/self-closing-comp": "error",
-    "jsx-a11y/anchor-is-valid": "warn",
-    "jsx-a11y/no-noninteractive-element-interactions": "warn",
-    "jsx-a11y/click-events-have-key-events": "warn",
-    "jsx-a11y/no-static-element-interactions": "warn",
-    "react/no-unknown-property": "warn",
+    "@next/next/no-img-element": "off",
+    "react/no-unknown-property": [
+      "warn",
+      {
+        ignore: ["css", "tw"],
+      },
+    ],
   },
 };
