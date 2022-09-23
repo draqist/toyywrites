@@ -11,6 +11,7 @@
     "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
+    "framer-motion": "^7.3.6",
     "gsap": "^3.11.1",
     "hover-effect": "^1.1.0",
     "locomotive-scroll": "^4.1.4",

@@ -15,6 +15,7 @@ export const GlobalStyles = createGlobalStyle`
         --background-color: #E6E6E6;
         --test: purple;
         --border: #00000030;
+        --border-light: #ffffff80;
       }
     @font-face {
         font-family: 'Bergman';

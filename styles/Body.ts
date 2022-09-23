@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 export const Body = styled.div`
-  padding:0 30px;
   width: 100%;
 `
 export const CarouselContainer = styled.div`
   height: 500px; 
-  background-color: green;
+  background-color: rebeccapurple;
   width: 100%;
   position: relative;
   top: 100px;
+`
+export const ContentContainer = styled.div`
+  padding:0 30px;
 `
 export const BrandTag = styled.div`
   height: 500px; 
@@ -18,7 +20,7 @@ export const BrandTag = styled.div`
   font-size:clamp(1rem,4vw,1.15rem); 
   text-align:center;
   display: flex; 
-  align-items: center; 
+  align-items: center;
   flex-direction: column;
   .brand {
     &_tagline {
@@ -84,14 +86,18 @@ export const Projects = styled.div`
   text-align:center;
   margin-top: 30px;
   font-size:clamp(1rem,4vw,1.15rem); 
+  background-color: #000000;
+  color: #ffffff80;
+  height: 500px;
   .project{
     &_tagline {
+      padding: 20px 30px ;
       display: grid;
       grid-template-columns: repeat(3, 1fr) ;
       width: 100%;
       align-items: center;
         div{
-          background-color: var(--border);
+          background-color: var(--border-light);
           height: 1px;
         }
     }

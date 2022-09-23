@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { Menu, MenuNav, Nav } from "../styles/navstyles";
+import { Menu, Nav, NavBody } from "../styles/navstyles";
+import { navAnimation } from "../utils/animations";
+import NavItem from "./NavItem";
 
 const Navbar = () => {
   const [nav, setNav] = useState<boolean>(false);
@@ -13,7 +15,14 @@ const Navbar = () => {
         <div />
         <div />
       </Menu>
-      {nav ? <MenuNav onClick={() => setNav(!nav)} /> : null}
+      {nav ? (
+        <NavBody initial="initial" animate="animate" variants={navAnimation} onClick={() => setNav(!nav)}>
+          <NavItem />
+          <NavItem />
+          <NavItem />
+          <NavItem />
+        </NavBody>
+      ) : null}
     </Nav>
   );
 };
