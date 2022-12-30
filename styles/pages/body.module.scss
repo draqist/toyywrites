@@ -1,19 +1,18 @@
-import styled from "styled-components";
-
-export const Body = styled.div`
+.body {
   width: 100%;
-`;
-export const CarouselContainer = styled.div`
+}
+.carousel_container {
   height: 500px;
   background-color: rebeccapurple;
   width: 100%;
   position: relative;
   top: 100px;
-`;
-export const ContentContainer = styled.div`
+}
+.content_container {
   padding: 0 30px;
-`;
-export const BrandTag = styled.div`
+}
+
+.brand_tag {
   height: 500px;
   width: 100%;
   margin-top: 150px;
@@ -80,8 +79,8 @@ export const BrandTag = styled.div`
       }
     }
   }
-`;
-export const Projects = styled.div`
+}
+.projects {
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -108,9 +107,8 @@ export const Projects = styled.div`
       justify-content: space-between;
     }
   }
-`;
-
-export const ImageContainer = styled.div`
+}
+.image_container {
   width: 320px;
   height: 560px;
   border-radius: 14px;
@@ -119,4 +117,4 @@ export const ImageContainer = styled.div`
     width: 100%;
     height: 100%;
   }
-`;
+}

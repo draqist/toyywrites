@@ -1,9 +1,22 @@
 import { motion } from "framer-motion";
 import type { NextPage } from "next";
-import Navbar from "../components/Navbar";
-import { Body, BrandTag, CarouselContainer, ContentContainer, Projects } from "../styles/Body";
-
+import Navbar from "../components/UI/Navbar";
+import styles from "../styles/pages/body.module.scss";
 const Home: NextPage = () => {
+  const {
+    carousel_container,
+    brand_tag,
+    brand_tagline,
+    brand_svg,
+    brand_brief,
+    brand_link,
+    content_container,
+    projects,
+    image_container,
+    body,
+    project_tagline,
+    project_slides,
+  } = styles;
   const svgVariants = {
     initial: { opacity: 0 },
     animate: { opacity: 1, transition: { duration: 2 } },
@@ -13,24 +26,24 @@ const Home: NextPage = () => {
     whileInView: { pathLength: 1, transition: { duration: 2, ease: "easeIn" } },
   };
   return (
-    <Body>
+    <div className={body}>
       <Navbar />
-      <CarouselContainer></CarouselContainer>
-      <ContentContainer>
-        <BrandTag>
-          <div className="brand_tagline">
+      <div className={carousel_container} />
+      <div className={content_container}>
+        <section className={brand_tag}>
+          <div className={brand_tagline}>
             <div />
             <h1>FASHION WITH SAUCE </h1>
             <div />
           </div>
-          <div className="brand_brief">
+          <div className={brand_brief}>
             {" "}
             It all began 15 years ago in the tight crevices of Lagos, Nigeria. The will to make people express
             themselves with the confidence that their attires gave them. Putting smiles on faces and making people the
             talk of town with trendy and stylish designs from all cultural blends.
           </div>
-          <div className="brand_svg">
-            <div className="brand_link">
+          <div className={brand_svg}>
+            <div className={brand_link}>
               <h3> DISCOVER DIIJA </h3>
             </div>
             <div className="svg">
@@ -73,35 +86,35 @@ const Home: NextPage = () => {
               </motion.svg>
             </div>
           </div>
-        </BrandTag>
-      </ContentContainer>
-      <Projects>
-        <div className="project_tagline">
+        </section>
+      </div>
+      <section className={projects}>
+        <div className={project_tagline}>
           <div />
           <h1> YOU IN MANY SHADES </h1>
           <div />
         </div>
-        <div className="project_slides">
+        <div className={project_slides}>
           {/* <SliderImage />
             <SliderImage />
             <SliderImage /> */}
         </div>
-      </Projects>
-      <ContentContainer>
-        <BrandTag>
-          <div className="brand_tagline">
+      </section>
+      <div className={content_container}>
+        <section className={brand_tag}>
+          <div className={brand_tagline}>
             <div />
             <h1>FASHION WITH SAUCE </h1>
             <div />
           </div>
-          <div className="brand_brief">
+          <div className={brand_brief}>
             {" "}
             It all began 15 years ago in the tight crevices of Lagos, Nigeria. The will to make people express
             themselves with the confidence that their attires gave them. Putting smiles on faces and making people the
             talk of town with trendy and stylish designs from all cultural blends.
           </div>
-          <div className="brand_svg">
-            <div className="brand_link">
+          <div className={brand_svg}>
+            <div className={brand_link}>
               <h3> DISCOVER DIIJA </h3>
             </div>
             <div className="svg">
@@ -144,9 +157,9 @@ const Home: NextPage = () => {
               </motion.svg>
             </div>
           </div>
-        </BrandTag>
-      </ContentContainer>
-    </Body>
+        </section>
+      </div>
+    </div>
   );
 };
 

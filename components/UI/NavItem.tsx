@@ -1,5 +1,5 @@
-import styles from "../styles/components/navbar.module.scss";
 import { motion } from "framer-motion";
+import styles from "../../styles/components/navbar.module.scss";
 
 const NavItem = (props: any) => {
   const { menu_nav_dropdown, nav_number, nav_link } = styles;
