@@ -1,7 +1,4 @@
-import { motion } from "framer-motion";
-import styled from "styled-components";
-
-export const Nav = styled.div`
+.navbar {
   height: 70px;
   width: 100%;
   display: flex;
@@ -17,9 +14,9 @@ export const Nav = styled.div`
     letter-spacing: -1.5px;
   }
   border-bottom: 1px solid var(--border);
-`;
+}
 
-export const Menu = styled.button`
+.menu {
   width: 60px;
   height: 28px;
   display: flex;
@@ -30,9 +27,9 @@ export const Menu = styled.button`
     height: 1px;
     background-color: black;
   }
-`;
+}
 
-export const NavBody = styled(motion.div)`
+.nav_dropdown {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -44,8 +41,15 @@ export const NavBody = styled(motion.div)`
   z-index: 5;
   transition: all 1.5s ease-in-out;
   left: 0px;
-`;
-export const MenuNav = styled(motion.div)`
+  :hover {
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    border-right-color: #fff;
+  }
+}
+
+.menu_nav_dropdown {
   width: 100%;
   background-color: var(--background-color);
   display: grid;
@@ -53,12 +57,6 @@ export const MenuNav = styled(motion.div)`
   flex-basis: 33%;
   border: none;
   border-color: var(--border);
-  :hover {
-    background-color: black;
-    color: white;
-    transition: all 0.5s ease-in;
-    border-right-color: #fff;
-  }
   .nav {
     &_number {
       width: 100%;
@@ -88,4 +86,4 @@ export const MenuNav = styled(motion.div)`
       font-size: 40px;
     }
   }
-`;
+}

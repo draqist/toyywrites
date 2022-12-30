@@ -1,29 +1,38 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
-import { Menu, Nav, NavBody } from "../styles/navstyles";
+import styles from "../styles/components/navbar.module.scss";
+import { Nav } from "../styles/navstyles";
 import { navAnimation } from "../utils/animations";
 import NavItem from "./NavItem";
 
 const Navbar = () => {
   const [nav, setNav] = useState<boolean>(false);
+  const { navbar, menu, nav_dropdown, menu_nav_dropdown } = styles;
   return (
-    <Nav>
+    <div className={navbar}>
       <div>
         <h1> DIIJA UNIQUE DESIGNS </h1>
       </div>
-      <Menu onClick={() => setNav(!nav)}>
+      <button className={menu} onClick={() => setNav(!nav)}>
         <div />
         <div />
         <div />
-      </Menu>
+      </button>
       {nav ? (
-        <NavBody initial="initial" animate="animate" variants={navAnimation} onClick={() => setNav(!nav)}>
+        <motion.div
+          className={nav_dropdown}
+          initial="initial"
+          animate="animate"
+          variants={navAnimation}
+          onClick={() => setNav(!nav)}
+        >
           <NavItem />
           <NavItem />
           <NavItem />
           <NavItem />
-        </NavBody>
+        </motion.div>
       ) : null}
-    </Nav>
+    </div>
   );
 };
 

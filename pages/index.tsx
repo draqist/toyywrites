@@ -75,17 +75,17 @@ const Home: NextPage = () => {
           </div>
         </BrandTag>
       </ContentContainer>
-        <Projects>
-          <div className="project_tagline">
-            <div />
-            <h1> YOU IN MANY SHADES </h1>
-            <div />
-          </div>
-          <div className="project_slides">
-            {/* <SliderImage />
+      <Projects>
+        <div className="project_tagline">
+          <div />
+          <h1> YOU IN MANY SHADES </h1>
+          <div />
+        </div>
+        <div className="project_slides">
+          {/* <SliderImage />
             <SliderImage />
             <SliderImage /> */}
-          </div>
+        </div>
       </Projects>
       <ContentContainer>
         <BrandTag>
