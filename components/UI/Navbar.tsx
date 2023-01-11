@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import styles from "../../styles/components/navbar.module.scss";
-import { navAnimation } from "../../utils/animations";
+import { navAnimation } from "../../utils/animations/animations";
 import NavItem from "./NavItem";
 
 const Navbar = () => {

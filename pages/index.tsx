@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import type { NextPage } from "next";
 import Navbar from "../components/UI/Navbar";
 import styles from "../styles/pages/body.module.scss";
+import { pathVariants, svgVariants } from "../utils/animations/globals";
 const Home: NextPage = () => {
   const {
     carousel_container,
@@ -17,14 +18,6 @@ const Home: NextPage = () => {
     project_tagline,
     project_slides,
   } = styles;
-  const svgVariants = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1, transition: { duration: 2 } },
-  };
-  const pathVariants = {
-    initial: { pathLength: 0 },
-    whileInView: { pathLength: 1, transition: { duration: 2, ease: "easeIn" } },
-  };
   return (
     <div className={body}>
       <Navbar />
