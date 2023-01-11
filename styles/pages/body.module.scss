@@ -10,6 +10,9 @@
 }
 .content_container {
   padding: 0 30px;
+  @media screen and (max-width: 767px) {
+    padding: 0 12px;
+  }
 }
 
 .brand_tag {
@@ -78,6 +81,19 @@
         }
       }
     }
+    @media (max-width: 767px) {
+      &_tagline{
+        grid-template-columns: repeat(5, 1fr);
+        h1{
+          font-size: 20px;
+          grid-column: span 3 / span 3;
+        }
+      }
+      &_brief{
+        font-size: 18px;
+        width: 100%;
+      }
+    }
   }
 }
 .projects {
@@ -105,6 +121,16 @@
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+    }
+    @media (max-width: 767px) {
+      &_tagline{
+        padding: 20px 12px;
+        grid-template-columns: repeat(5, 1fr);
+        h1{
+          font-size: 20px;
+          grid-column: span 3 / span 3;
+        }
+      }
     }
   }
 }

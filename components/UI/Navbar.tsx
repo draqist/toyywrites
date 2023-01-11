@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { navAnimation } from "../../utils/animations";
 import styles from "../../styles/components/navbar.module.scss";
+import { navAnimation } from "../../utils/animations";
 import NavItem from "./NavItem";
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className={navbar}>
       <div>
-        <h1> DIIJA UNIQUE DESIGNS </h1>
+        <h1> TOYYWRITES </h1>
       </div>
       <button className={menu} onClick={() => setNav(!nav)}>
         <div />
