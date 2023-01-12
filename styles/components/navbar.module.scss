@@ -51,11 +51,12 @@
   position: absolute;
   top: 0;
   z-index: 5;
-  transition: all 1.5s ease-in-out;
+  transition: all 1s ease-in-out;
   left: 0px;
   :hover {
     background-color: black;
     color: white;
+    transform: translateY(50);
     transition: all 0.5s ease-in-out;
     border-right-color: #fff;
   }
